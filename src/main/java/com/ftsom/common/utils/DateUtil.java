@@ -87,6 +87,24 @@ public class DateUtil {
     }
 
     /**
+     * 获取今天开始时间
+     *
+     * @return 时间：2022-10-10T00:00
+     */
+    public static LocalDateTime getStartTimeToday() {
+        return getStartTime(LocalDate.now());
+    }
+
+    /**
+     * 获取今天结束时间
+     *
+     * @return 时间：2022-10-10T23:59:59.999999999
+     */
+    public static LocalDateTime getEndTimeToday() {
+        return getEndTime(LocalDate.now());
+    }
+
+    /**
      * 获取开始时间
      *
      * @param localDate 日期
